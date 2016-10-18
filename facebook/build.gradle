@@ -43,6 +43,14 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-skedgo.txt'
+        }
+    }
+
     aaptOptions {
         additionalParameters "--no-version-vectors"
     }

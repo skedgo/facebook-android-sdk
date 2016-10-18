@@ -1,0 +1,4 @@
+# Keeps only classes that TripGo needs.
+-keep public final class com.facebook.FacebookSdk { public *; }
+-keep public class com.facebook.appevents.AppEventsLogger { public *; }
+-dontobfuscate
